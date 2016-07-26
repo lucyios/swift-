@@ -1,0 +1,26 @@
+[
+ {
+ "vcName": "LX_HomeViewController",
+ "title": "首页",
+ "norImage": "tabbar_home",
+ "selImage":"tabbar_home_highlighted"
+ },
+ {
+ "vcName": "LX_MessageViewController",
+ "title": "消息",
+ "norImage": "tabbar_message_center",
+  "selImage":"tabbar_message_center_highlighted"
+ },
+ {
+ "vcName": "LX_DiscoverViewController",
+ "title": "广场",
+ "norImage": "tabbar_discover",
+ "selImage":"tabbar_discover_highlighted"
+ },
+ {
+ "vcName": "LX_ProfileViewController",
+ "title": "我",
+ "norImage": "tabbar_profile",
+ "selImage":"tabbar_profile_highlighted"
+ }
+ ]
