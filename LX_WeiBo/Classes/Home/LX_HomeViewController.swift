@@ -19,7 +19,24 @@ class LX_HomeViewController: LX_BaseTableViewController {
             visitorView?.setUpVistorInfo(nil, title: "")
             return
         }
+    
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendattention", target: self, action: Selector("friendBtnClick"))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", target: self, action: Selector("qrcodeBtnClick"))
+
         
     }
+    
+    @objc private func friendBtnClick(){
+    
+        LXLog("pengyou")
+    
+    }
+    
+    @objc private func qrcodeBtnClick(){
+        LXLog("扫一扫")
+    }
+    
+    
+    
 
  }

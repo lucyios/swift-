@@ -142,10 +142,7 @@ class LX_MainViewController: UITabBarController {
 //        btn.setBackgroundImage(UIImage(named:"tabbar_compose_button"), forState: UIControlState.Normal)
 //        btn.setBackgroundImage(UIImage(named:"tabbar_compose_button_highlighted"), forState: UIControlState.Selected)
 
-//        let btn = UIButton.creatButton("tabbar_compose_icon_add", backImage: "tabbar_compose_button")
-        
-        
-        
+//        let btn = UIButton.creatButton("tabbar_compose_icon_add", backImage: "tabbar_compose_button") 
         let btn = UIButton(norImg: "tabbar_compose_icon_add", backImg: "tabbar_compose_button")
         btn.addTarget(self, action: #selector(LX_MainViewController.plusBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         

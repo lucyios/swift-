@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //统一设置外观
         UITabBar.appearance().tintColor = UIColor.orangeColor()
 //
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
 //        window = UIWindow(frame: UIScreen.mainScreen().bounds)
 //        window?.backgroundColor = UIColor.whiteColor()
 //        window?.rootViewController = LX_MainViewController()
