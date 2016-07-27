@@ -39,23 +39,21 @@ class LX_BaseTableViewController: UITableViewController {
         
         visitorView?.loginButton.addTarget(self, action: #selector(LX_BaseTableViewController.loginBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         
+       
+     
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         //3.添加导航条按钮
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(LX_BaseTableViewController.registerBtnClick));
 //        
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登陆", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(LX_BaseTableViewController.loginBtnClick))
-//        
-//
         
-        let titleButton = LX_TitleBtn()
-        titleButton.addTarget(self, action: Selector("titleBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
-        navigationItem.titleView = titleButton
+        
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendattention", target: self, action: Selector("friendBtnClick"))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", target: self, action: Selector("qrcodeBtnClick"))
-
-     
     }
-    
     
     @objc private func registerBtnClick(){
         LXLog("注册")

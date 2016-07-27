@@ -16,12 +16,11 @@ class LX_TitleBtn: UIButton {
         
         adjustsImageWhenHighlighted = false
         setTitleColor(UIColor.darkGrayColor(), forState: UIControlState.Normal)
-        setTitle("lucy", forState: UIControlState.Normal)
+        setTitle("lucy ", forState: UIControlState.Normal)
         setImage(UIImage(named: "navigationbar_arrow_down"), forState: UIControlState.Normal)
         setImage(UIImage(named: "navigationbar_arrow_up"), forState: UIControlState.Selected)
         sizeToFit()
     }
-    
     
     //通过SB或者xib会调用
     required init?(coder aDecoder: NSCoder) {
@@ -30,9 +29,9 @@ class LX_TitleBtn: UIButton {
         
     }
     
-    
     override func layoutSubviews() {
         
+        super.layoutSubviews()
         titleLabel?.frame.origin.x = 0
         imageView?.frame.origin.x = titleLabel!.frame.width
         

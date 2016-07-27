@@ -21,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.orangeColor()
 //
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
-//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//        window?.backgroundColor = UIColor.whiteColor()
-//        window?.rootViewController = LX_MainViewController()
-//        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.whiteColor()
+        window?.rootViewController = LX_MainViewController()
+        window?.makeKeyAndVisible()
         
         
         

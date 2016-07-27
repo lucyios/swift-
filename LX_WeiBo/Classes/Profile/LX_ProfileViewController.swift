@@ -13,7 +13,8 @@ class LX_ProfileViewController: LX_BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
+        navigationItem.title = "我的"
         
         if !login
         {

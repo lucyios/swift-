@@ -7,7 +7,7 @@
         <!--发现-->
         <scene sceneID="aDY-1b-sXD">
             <objects>
-                <tableViewController id="e1S-3Y-rJG" customClass="LX_DiscoverViewController" customModule="weibo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="e1S-3Y-rJG" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="I7J-FL-8i7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

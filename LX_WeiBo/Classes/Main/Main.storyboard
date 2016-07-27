@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="kqJ-YJ-dSL">
             <objects>
-                <tabBarController id="RIG-Ov-fYg" customClass="LX_MainViewController" customModule="weibo" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="RIG-Ov-fYg" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="AeA-Zk-92n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>

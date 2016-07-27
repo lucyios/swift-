@@ -52,7 +52,7 @@ class LX_MainViewController: UITabBarController {
 //        addChildViewcontroller("LX_ProfileViewController", norImage: "tabbar_profile", selImage: "tabbar_profile_highlighted", title: "我的")
         
     
-        /*
+        
         
         //动态加载控制器
         let path = NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil)!
@@ -70,6 +70,9 @@ class LX_MainViewController: UITabBarController {
             //如果没有数据,就写死
             addChildViewcontroller("LX_HomeViewController", norImage: "tabbar_home", selImage: "tabbar_home_highlighted", title: "首页")
             addChildViewcontroller("LX_MessageViewController", norImage: "tabbar_message_center", selImage: "tabbar_message_center_highlighted", title: "消息")
+            
+            
+            addChildViewcontroller("LX_NullViewController", norImage: "te", selImage: "test", title: "")
             addChildViewcontroller("LX_DiscoverViewController", norImage: "tabbar_discover", selImage: "tabbar_discover_highlighted", title: "广场")
             addChildViewcontroller("LX_ProfileViewController", norImage: "tabbar_profile", selImage: "tabbar_profile_highlighted", title: "我的")
             return
@@ -118,7 +121,7 @@ class LX_MainViewController: UITabBarController {
         
         addChildViewController(nav)
  
- */
+ 
 
     }
     

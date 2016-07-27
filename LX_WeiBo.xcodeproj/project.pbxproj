@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C036ABE1D48EFE800F50D63 /* LX_PrsentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036ABD1D48EFE800F50D63 /* LX_PrsentationController.swift */; };
+		3C036AC31D48F04600F50D63 /* LX_PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036AC11D48F04600F50D63 /* LX_PopoverViewController.swift */; };
+		3C036AC61D48F07B00F50D63 /* LX_PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C036AC51D48F07B00F50D63 /* LX_PopoverViewController.storyboard */; };
 		3C2B36D61D3A6945004903CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B36D51D3A6945004903CE /* AppDelegate.swift */; };
 		3C2B36DD1D3A6945004903CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B36DC1D3A6945004903CE /* Assets.xcassets */; };
 		3C2B36EB1D3A6945004903CE /* LX_WeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B36EA1D3A6945004903CE /* LX_WeiBoTests.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C036ABD1D48EFE800F50D63 /* LX_PrsentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_PrsentationController.swift; sourceTree = "<group>"; };
+		3C036AC11D48F04600F50D63 /* LX_PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_PopoverViewController.swift; sourceTree = "<group>"; };
+		3C036AC51D48F07B00F50D63 /* LX_PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_PopoverViewController.storyboard; sourceTree = "<group>"; };
 		3C2B36D21D3A6945004903CE /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2B36D51D3A6945004903CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C2B36DC1D3A6945004903CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +114,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C036ABC1D48EFAD00F50D63 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				3C036AC11D48F04600F50D63 /* LX_PopoverViewController.swift */,
+				3C036AC51D48F07B00F50D63 /* LX_PopoverViewController.storyboard */,
+				3C036ABD1D48EFE800F50D63 /* LX_PrsentationController.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
 		3C2B36C91D3A6945004903CE = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +199,7 @@
 		3C2B37051D3A69B6004903CE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3C036ABC1D48EFAD00F50D63 /* Popover */,
 				3C2B370E1D3A6C92004903CE /* LX_HomeViewController.swift */,
 				3C2B371A1D3B693B004903CE /* Home.storyboard */,
 			);
@@ -349,6 +366,7 @@
 				3C2B37191D3B66C5004903CE /* Main.storyboard in Resources */,
 				3C2B37171D3B5AD1004903CE /* MainVCSettings.json in Resources */,
 				3C2B372A1D3B899E004903CE /* vistorView.xib in Resources */,
+				3C036AC61D48F07B00F50D63 /* LX_PopoverViewController.storyboard in Resources */,
 				3C2B371D1D3B6A7F004903CE /* Me.storyboard in Resources */,
 				3C662E8F1D48335C001CE5DB /* LX_DiscoverViewController.storyboard in Resources */,
 				3C3448E31D4834BF00884EB4 /* LX_MessageViewController.storyboard in Resources */,
@@ -385,9 +403,11 @@
 				3C2B370F1D3A6C92004903CE /* LX_HomeViewController.swift in Sources */,
 				3C2B372C1D3B89C0004903CE /* LX_VistorView.swift in Sources */,
 				3C2B37271D3B80DE004903CE /* UIButton+Extenttion.swift in Sources */,
+				3C036AC31D48F04600F50D63 /* LX_PopoverViewController.swift in Sources */,
 				3C2B371F1D3B6FCE004903CE /* LX_NullViewController.swift in Sources */,
 				3C2B370B1D3A6C27004903CE /* LX_MainViewController.swift in Sources */,
 				3C3269661D48382700C7EC51 /* LX_TitleBtn.swift in Sources */,
+				3C036ABE1D48EFE800F50D63 /* LX_PrsentationController.swift in Sources */,
 				3C2B37131D3A6CB3004903CE /* LX_ProfileViewController.swift in Sources */,
 				3C2B37151D3A7391004903CE /* main.swift in Sources */,
 				3C2B370D1D3A6C83004903CE /* LX_DiscoverViewController.swift in Sources */,

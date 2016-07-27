@@ -7,7 +7,7 @@
         <!--首页-->
         <scene sceneID="hD4-rF-4X1">
             <objects>
-                <tableViewController id="TNs-WI-jDn" customClass="LX_HomeViewController" customModule="weibo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="TNs-WI-jDn" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yyr-uX-Vn5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

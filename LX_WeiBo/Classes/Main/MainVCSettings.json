@@ -12,6 +12,12 @@
   "selImage":"tabbar_message_center_highlighted"
  },
  {
+ "vcName": "LX_NullViewController",
+ "title": "",
+ "norImage": "",
+ "selImage":""
+ },
+ {
  "vcName": "LX_DiscoverViewController",
  "title": "广场",
  "norImage": "tabbar_discover",
