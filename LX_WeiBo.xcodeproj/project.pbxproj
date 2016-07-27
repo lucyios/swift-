@@ -27,7 +27,10 @@
 		3C2B372A1D3B899E004903CE /* vistorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B37291D3B899E004903CE /* vistorView.xib */; };
 		3C2B372C1D3B89C0004903CE /* LX_VistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B372B1D3B89C0004903CE /* LX_VistorView.swift */; };
 		3C2B372E1D3B8E04004903CE /* LX_BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B372D1D3B8E04004903CE /* LX_BaseTableViewController.swift */; };
-		3C662E8B1D4825BE001CE5DB /* UIBarButtonItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C662E8A1D4825BE001CE5DB /* UIBarButtonItem+Extention.swift */; };
+		3C3269661D48382700C7EC51 /* LX_TitleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */; };
+		3C3448E31D4834BF00884EB4 /* LX_MessageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3448E21D4834BF00884EB4 /* LX_MessageViewController.storyboard */; };
+		3C662E8D1D483281001CE5DB /* UIBarButtonItem+Extention .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */; };
+		3C662E8F1D48335C001CE5DB /* LX_DiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +77,10 @@
 		3C2B37291D3B899E004903CE /* vistorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vistorView.xib; sourceTree = "<group>"; };
 		3C2B372B1D3B89C0004903CE /* LX_VistorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_VistorView.swift; sourceTree = "<group>"; };
 		3C2B372D1D3B8E04004903CE /* LX_BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_BaseTableViewController.swift; sourceTree = "<group>"; };
-		3C662E8A1D4825BE001CE5DB /* UIBarButtonItem+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention.swift"; sourceTree = "<group>"; };
+		3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_TitleBtn.swift; sourceTree = "<group>"; };
+		3C3448E21D4834BF00884EB4 /* LX_MessageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_MessageViewController.storyboard; sourceTree = "<group>"; };
+		3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention .swift"; sourceTree = "<group>"; };
+		3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_DiscoverViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				3C2B37061D3A69B6004903CE /* Main */,
-				3C2B37041D3A69B6004903CE /* Discover */,
 				3C2B37051D3A69B6004903CE /* Home */,
+				3C2B37041D3A69B6004903CE /* Discover */,
 				3C2B37071D3A69B6004903CE /* Message */,
 				3C2B37081D3A69B6004903CE /* Profile */,
 				3C2B37091D3A69B6004903CE /* Tools */,
@@ -169,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2B370C1D3A6C83004903CE /* LX_DiscoverViewController.swift */,
+				3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2B37101D3A6CA1004903CE /* LX_MessageViewController.swift */,
+				3C3448E21D4834BF00884EB4 /* LX_MessageViewController.storyboard */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -216,7 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				3C2B37261D3B80DE004903CE /* UIButton+Extenttion.swift */,
-				3C662E8A1D4825BE001CE5DB /* UIBarButtonItem+Extention.swift */,
+				3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */,
+				3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -341,6 +350,8 @@
 				3C2B37171D3B5AD1004903CE /* MainVCSettings.json in Resources */,
 				3C2B372A1D3B899E004903CE /* vistorView.xib in Resources */,
 				3C2B371D1D3B6A7F004903CE /* Me.storyboard in Resources */,
+				3C662E8F1D48335C001CE5DB /* LX_DiscoverViewController.storyboard in Resources */,
+				3C3448E31D4834BF00884EB4 /* LX_MessageViewController.storyboard in Resources */,
 				3C2B36DD1D3A6945004903CE /* Assets.xcassets in Resources */,
 				3C2B371B1D3B693B004903CE /* Home.storyboard in Resources */,
 				3C2B37211D3B7054004903CE /* Null.storyboard in Resources */,
@@ -368,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C662E8D1D483281001CE5DB /* UIBarButtonItem+Extention .swift in Sources */,
 				3C2B37111D3A6CA1004903CE /* LX_MessageViewController.swift in Sources */,
 				3C2B36D61D3A6945004903CE /* AppDelegate.swift in Sources */,
 				3C2B370F1D3A6C92004903CE /* LX_HomeViewController.swift in Sources */,
@@ -375,9 +387,9 @@
 				3C2B37271D3B80DE004903CE /* UIButton+Extenttion.swift in Sources */,
 				3C2B371F1D3B6FCE004903CE /* LX_NullViewController.swift in Sources */,
 				3C2B370B1D3A6C27004903CE /* LX_MainViewController.swift in Sources */,
+				3C3269661D48382700C7EC51 /* LX_TitleBtn.swift in Sources */,
 				3C2B37131D3A6CB3004903CE /* LX_ProfileViewController.swift in Sources */,
 				3C2B37151D3A7391004903CE /* main.swift in Sources */,
-				3C662E8B1D4825BE001CE5DB /* UIBarButtonItem+Extention.swift in Sources */,
 				3C2B370D1D3A6C83004903CE /* LX_DiscoverViewController.swift in Sources */,
 				3C2B372E1D3B8E04004903CE /* LX_BaseTableViewController.swift in Sources */,
 			);
