@@ -10,6 +10,8 @@
 		3C036ABE1D48EFE800F50D63 /* LX_PrsentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036ABD1D48EFE800F50D63 /* LX_PrsentationController.swift */; };
 		3C036AC31D48F04600F50D63 /* LX_PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036AC11D48F04600F50D63 /* LX_PopoverViewController.swift */; };
 		3C036AC61D48F07B00F50D63 /* LX_PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C036AC51D48F07B00F50D63 /* LX_PopoverViewController.storyboard */; };
+		3C036AC81D49931100F50D63 /* LX_PopoverAnimationManget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036AC71D49931100F50D63 /* LX_PopoverAnimationManget.swift */; };
+		3C036ACA1D49964500F50D63 /* LX_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036AC91D49964500F50D63 /* LX_Common.swift */; };
 		3C2B36D61D3A6945004903CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B36D51D3A6945004903CE /* AppDelegate.swift */; };
 		3C2B36DD1D3A6945004903CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B36DC1D3A6945004903CE /* Assets.xcassets */; };
 		3C2B36EB1D3A6945004903CE /* LX_WeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B36EA1D3A6945004903CE /* LX_WeiBoTests.swift */; };
@@ -57,6 +59,8 @@
 		3C036ABD1D48EFE800F50D63 /* LX_PrsentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_PrsentationController.swift; sourceTree = "<group>"; };
 		3C036AC11D48F04600F50D63 /* LX_PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_PopoverViewController.swift; sourceTree = "<group>"; };
 		3C036AC51D48F07B00F50D63 /* LX_PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_PopoverViewController.storyboard; sourceTree = "<group>"; };
+		3C036AC71D49931100F50D63 /* LX_PopoverAnimationManget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_PopoverAnimationManget.swift; sourceTree = "<group>"; };
+		3C036AC91D49964500F50D63 /* LX_Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_Common.swift; sourceTree = "<group>"; };
 		3C2B36D21D3A6945004903CE /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2B36D51D3A6945004903CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C2B36DC1D3A6945004903CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				3C036AC11D48F04600F50D63 /* LX_PopoverViewController.swift */,
 				3C036AC51D48F07B00F50D63 /* LX_PopoverViewController.storyboard */,
 				3C036ABD1D48EFE800F50D63 /* LX_PrsentationController.swift */,
+				3C036AC71D49931100F50D63 /* LX_PopoverAnimationManget.swift */,
 			);
 			path = Popover;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				3C2B37261D3B80DE004903CE /* UIButton+Extenttion.swift */,
 				3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */,
 				3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */,
+				3C036AC91D49964500F50D63 /* LX_Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 				3C2B37111D3A6CA1004903CE /* LX_MessageViewController.swift in Sources */,
 				3C2B36D61D3A6945004903CE /* AppDelegate.swift in Sources */,
 				3C2B370F1D3A6C92004903CE /* LX_HomeViewController.swift in Sources */,
+				3C036AC81D49931100F50D63 /* LX_PopoverAnimationManget.swift in Sources */,
 				3C2B372C1D3B89C0004903CE /* LX_VistorView.swift in Sources */,
 				3C2B37271D3B80DE004903CE /* UIButton+Extenttion.swift in Sources */,
 				3C036AC31D48F04600F50D63 /* LX_PopoverViewController.swift in Sources */,
@@ -412,6 +419,7 @@
 				3C2B37151D3A7391004903CE /* main.swift in Sources */,
 				3C2B370D1D3A6C83004903CE /* LX_DiscoverViewController.swift in Sources */,
 				3C2B372E1D3B8E04004903CE /* LX_BaseTableViewController.swift in Sources */,
+				3C036ACA1D49964500F50D63 /* LX_Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

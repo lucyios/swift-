@@ -10,19 +10,23 @@ import UIKit
 
 class LX_PrsentationController: UIPresentationController {
 
+    
+    //记录菜单的尺寸
+    var presenttedFrame = CGRectZero
+    
     //布局被弹出的控制器
     override func containerViewWillLayoutSubviews() {
         super.containerViewWillLayoutSubviews()
-        
         //containerView 容器视图(所有被展现的内容,都在容器视图上)
         //presentView   被展现的视图(当前就是弹出菜单控制器的view)
+
         
         //1.添加蒙版
         containerView?.insertSubview(cover, atIndex: 0)
         cover.frame = (containerView!.bounds)
         
         //2.修改被展现视图的尺寸
-        presentedView()?.frame = CGRectMake(100, 56, 200, 200)
+        presentedView()?.frame = presenttedFrame
         
         
     }
@@ -33,7 +37,7 @@ class LX_PrsentationController: UIPresentationController {
         presentedViewController.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    //  MARK - lazy
+    //  MARK - 懒加载
     private lazy var cover: UIView = {
         //创建蒙版
         let otherView = UIView()
