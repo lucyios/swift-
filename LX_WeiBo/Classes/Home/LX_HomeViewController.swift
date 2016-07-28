@@ -86,6 +86,15 @@ class LX_HomeViewController: UITableViewController{
     
     @objc private func qrcodeBtnClick(){
         LXLog("扫一扫")
+        
+        //创建二维码界面
+        let sb = UIStoryboard(name: "LX_QRCodeViewController", bundle: nil)
+        let QRCodeVc = sb.instantiateInitialViewController()
+        
+        //弹出来
+        presentViewController(QRCodeVc!, animated: true, completion: nil)
+        
+        
     }
  
 
