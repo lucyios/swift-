@@ -44,14 +44,14 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uue-3e-ppK">
                                 <rect key="frame" x="37" y="183" width="300" height="300"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="ldY-1v-3n8" userLabel="冲击波">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="bod-RB-6mX" userLabel="边框">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="ldY-1v-3n8" userLabel="冲击波">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.144431805" green="0.89241580089999994" blue="0.069171690100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ldY-1v-3n8" firstAttribute="leading" secondItem="uue-3e-ppK" secondAttribute="leading" id="2cx-ER-rWr"/>
                                     <constraint firstItem="ldY-1v-3n8" firstAttribute="height" secondItem="bod-RB-6mX" secondAttribute="height" id="5de-k5-bb8"/>
@@ -65,10 +65,18 @@
                                     <constraint firstAttribute="trailing" secondItem="ldY-1v-3n8" secondAttribute="trailing" id="wht-qr-5Lp"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将二维码/条形码放入框中即可扫描" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vri-Cm-L84" userLabel="resultLable">
+                                <rect key="frame" x="57" y="503" width="261" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uue-3e-ppK" firstAttribute="centerY" secondItem="7Z7-DV-gK8" secondAttribute="centerY" id="5jx-yz-LuJ"/>
+                            <constraint firstItem="Vri-Cm-L84" firstAttribute="top" secondItem="uue-3e-ppK" secondAttribute="bottom" constant="20" id="GT0-I5-Frv"/>
+                            <constraint firstItem="Vri-Cm-L84" firstAttribute="centerX" secondItem="7Z7-DV-gK8" secondAttribute="centerX" id="dhO-Ow-Mel"/>
                             <constraint firstItem="uue-3e-ppK" firstAttribute="centerX" secondItem="7Z7-DV-gK8" secondAttribute="centerX" id="kOJ-Ps-WKk"/>
                         </constraints>
                     </view>
@@ -89,6 +97,7 @@
                         <outlet property="containerHeightCons" destination="a0e-WP-WAJ" id="NE6-SH-um5"/>
                         <outlet property="customContainerView" destination="uue-3e-ppK" id="XLn-WT-DPl"/>
                         <outlet property="customTababr" destination="U0y-xr-dft" id="osi-aY-YEe"/>
+                        <outlet property="resultLable" destination="Vri-Cm-L84" id="YE7-ke-IZT"/>
                         <outlet property="scanLine" destination="ldY-1v-3n8" id="03t-Pg-91q"/>
                         <outlet property="scanLineCons" destination="QP8-am-T2A" id="nB3-xJ-jre"/>
                     </connections>
