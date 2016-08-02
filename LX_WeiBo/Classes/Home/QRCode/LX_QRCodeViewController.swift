@@ -79,6 +79,9 @@ class LX_QRCodeViewController: UIViewController {
         //6.添加预览图层
         view.layer.insertSublayer(previewLayer, atIndex: 0)
         
+        //添加二维码边线图层
+        view.layer.insertSublayer(drawLayer, above: previewLayer)
+        
         //7.开始扫描
         session.startRunning()
     }
@@ -108,6 +111,13 @@ class LX_QRCodeViewController: UIViewController {
         return layer
     }()
     
+    ///创建保存二维码边线的图层
+    private lazy var drawLayer:CALayer = {
+        let layer = CALayer()
+        layer.frame = self.view.bounds
+        return layer
+        
+    }()
     
 }
 
@@ -123,7 +133,81 @@ extension LX_QRCodeViewController:AVCaptureMetadataOutputObjectsDelegate{
             print(object)
         }
         resultLable.text = metadataObjects.last?.stringValue ?? "将二维码/条形码放入框中即可扫描";
+        
+        //每次扫描前清除之前的边线记录
+        clearLines()
+        
+        // 1.遍历结果集
+        for objc in metadataObjects as! [AVMetadataMachineReadableCodeObject] {
+            
+            //2.讲结果集中的对象中保存的corners坐标,转换为识别的坐标
+            let res = previewLayer.transformedMetadataObjectForMetadataObject(objc)
+            
+            //3.绘制二维码边线
+            drawLines(res as! AVMetadataMachineReadableCodeObject)
+            
+        }
     }
+    
+    private func drawLines(cornersObjc: AVMetadataMachineReadableCodeObject){
+        
+        //3.0 践行安全检验
+        guard let corners = cornersObjc.corners else{
+            LXLog("没有数据")
+            return
+        }
+        
+        //3.1创建CAShapeLayer
+        let  shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = UIColor.greenColor().CGColor
+        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        shapeLayer.lineWidth = 4
+        
+        //3.2创建路径
+        let path = UIBezierPath()
+        
+        //定义变量保存从corners取出来的结果
+        var point: CGPoint = CGPointZero
+        //定义变量,记录索引
+        var index = 0
+        
+        //3.2.1移动到起点
+        CGPointMakeWithDictionaryRepresentation((corners[index++] as! CFDictionary), &point)
+        path.moveToPoint(point)
+        
+        //3.2.2连接到其他点
+        while index < corners.count {
+            CGPointMakeWithDictionaryRepresentation((corners[index++] as! CFDictionary), &point)
+      
+            path.addLineToPoint(point)
+        }
+        
+        path.closePath()
+        
+        shapeLayer.path = path.CGPath
+        
+        //3.2.3将绘制好的图层添加到drawlayer
+        drawLayer.addSublayer(shapeLayer)
+
+    }
+    
+    /**
+     清除二维码边线
+     */
+    private func clearLines(){
+        //1.检查有没有子图层
+        guard let subLayers = drawLayer.sublayers else{
+            LXLog("没有自图层")
+            return
+        }
+        
+        //2.删除zi图层
+        for layer in subLayers {
+            layer.removeFromSuperlayer()
+        }
+        
+    }
+    
 }
 
 // MARK: - UITabBarDelegate
