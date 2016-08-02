@@ -100,7 +100,19 @@ class LX_QRCodeViewController: UIViewController {
     }()
     
     ///创建输出
-    private lazy var output: AVCaptureMetadataOutput = AVCaptureMetadataOutput()
+//    private lazy var output: AVCaptureMetadataOutput = AVCaptureMetadataOutput()
+    
+    //创建输出,指定扫描范围
+    private lazy var output: AVCaptureMetadataOutput = {
+       let out = AVCaptureMetadataOutput()
+        
+        let rect = self.view.frame
+        //容器视图的frame
+        let containerRect = self.customContainerView.frame
+        out.rectOfInterest = CGRect(x: containerRect.origin.y / rect.size.height, y: containerRect.origin.x / rect.size.width, width: containerRect.size.height / rect.size.height, height: containerRect.size.width / rect.size.width)
+        
+        return out
+    }()
     
     ///创建会话
     private lazy var session: AVCaptureSession =  AVCaptureSession()
