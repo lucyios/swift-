@@ -57,6 +57,14 @@ class LX_BaseTableViewController: UITableViewController {
     
     @objc private func registerBtnClick(){
         LXLog("注册")
+        
+        //创建登陆界面
+        let sb = UIStoryboard.init(name: "LX_OAuthViewController", bundle: nil)
+        
+        let outhVc = sb.instantiateInitialViewController()!
+        
+        presentViewController(outhVc, animated: true, completion: nil)
+        
     }
     
     @objc private func loginBtnClick(){

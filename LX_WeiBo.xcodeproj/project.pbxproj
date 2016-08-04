@@ -14,6 +14,8 @@
 		3C036ACA1D49964500F50D63 /* LX_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036AC91D49964500F50D63 /* LX_Common.swift */; };
 		3C036AE41D4A35EE00F50D63 /* LX_QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C036AE31D4A35EE00F50D63 /* LX_QRCodeViewController.swift */; };
 		3C036AE61D4A35F900F50D63 /* LX_QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C036AE51D4A35F900F50D63 /* LX_QRCodeViewController.storyboard */; };
+		3C06A3EB1D536169003781AA /* LX_OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06A3E91D536169003781AA /* LX_OAuthViewController.swift */; };
+		3C06A3EE1D536182003781AA /* LX_OAuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C06A3ED1D536182003781AA /* LX_OAuthViewController.storyboard */; };
 		3C2B36D61D3A6945004903CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B36D51D3A6945004903CE /* AppDelegate.swift */; };
 		3C2B36DD1D3A6945004903CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B36DC1D3A6945004903CE /* Assets.xcassets */; };
 		3C2B36EB1D3A6945004903CE /* LX_WeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B36EA1D3A6945004903CE /* LX_WeiBoTests.swift */; };
@@ -66,6 +68,8 @@
 		3C036AC91D49964500F50D63 /* LX_Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_Common.swift; sourceTree = "<group>"; };
 		3C036AE31D4A35EE00F50D63 /* LX_QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_QRCodeViewController.swift; sourceTree = "<group>"; };
 		3C036AE51D4A35F900F50D63 /* LX_QRCodeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_QRCodeViewController.storyboard; sourceTree = "<group>"; };
+		3C06A3E91D536169003781AA /* LX_OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_OAuthViewController.swift; sourceTree = "<group>"; };
+		3C06A3ED1D536182003781AA /* LX_OAuthViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_OAuthViewController.storyboard; sourceTree = "<group>"; };
 		3C2B36D21D3A6945004903CE /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2B36D51D3A6945004903CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C2B36DC1D3A6945004903CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +149,15 @@
 			path = QRCode;
 			sourceTree = "<group>";
 		};
+		3C06A3E81D53614F003781AA /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3C06A3ED1D536182003781AA /* LX_OAuthViewController.storyboard */,
+				3C06A3E91D536169003781AA /* LX_OAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		3C2B36C91D3A6945004903CE = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +211,7 @@
 		3C2B37031D3A69B6004903CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3C06A3E81D53614F003781AA /* OAuth */,
 				3C2B37061D3A69B6004903CE /* Main */,
 				3C2B37051D3A69B6004903CE /* Home */,
 				3C2B37041D3A69B6004903CE /* Discover */,
@@ -387,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C2B37191D3B66C5004903CE /* Main.storyboard in Resources */,
+				3C06A3EE1D536182003781AA /* LX_OAuthViewController.storyboard in Resources */,
 				3C2B37171D3B5AD1004903CE /* MainVCSettings.json in Resources */,
 				3C2B372A1D3B899E004903CE /* vistorView.xib in Resources */,
 				3C036AC61D48F07B00F50D63 /* LX_PopoverViewController.storyboard in Resources */,
@@ -435,6 +450,7 @@
 				3C3269661D48382700C7EC51 /* LX_TitleBtn.swift in Sources */,
 				3C036ABE1D48EFE800F50D63 /* LX_PrsentationController.swift in Sources */,
 				3C2B37131D3A6CB3004903CE /* LX_ProfileViewController.swift in Sources */,
+				3C06A3EB1D536169003781AA /* LX_OAuthViewController.swift in Sources */,
 				3C2B37151D3A7391004903CE /* main.swift in Sources */,
 				3C036AE41D4A35EE00F50D63 /* LX_QRCodeViewController.swift in Sources */,
 				3C2B370D1D3A6C83004903CE /* LX_DiscoverViewController.swift in Sources */,

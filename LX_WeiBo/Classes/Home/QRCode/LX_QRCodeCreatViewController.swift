@@ -47,8 +47,7 @@ class LX_QRCodeCreatViewController: UIViewController {
         let bitmapRef = CGBitmapContextCreate(nil, Int(width), Int(height), 8, 0, cs, 0)!
         
         let context = CIContext()
-        
-        let bitmapImage: CGImageRef = context.createCGImage(image, fromRect: extent)
+         let bitmapImage: CGImageRef = context.createCGImage(image, fromRect: extent)
         
         CGContextSetInterpolationQuality(bitmapRef, CGInterpolationQuality.None)
         CGContextScaleCTM(bitmapRef, scale, scale)

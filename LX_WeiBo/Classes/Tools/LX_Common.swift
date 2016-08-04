@@ -14,3 +14,11 @@ import Foundation
 let LXPopoverControllerShowClick = "LXPopoverControllerShowClick"
 /// 自定义转场消失通知
 let LXPopoverControllerDismissClick = "LXPopoverControllerDismissClick"
+
+/// MARK - 授权信息
+let WB_APP_KEY = "139563585"
+let WB_APP_SECRET = "1351888000d1944e8353f9a351591f61"
+let WB_REDIRECT_URI = "http://sns.whalecloud.com/sina2/callback"
+
+
+        
