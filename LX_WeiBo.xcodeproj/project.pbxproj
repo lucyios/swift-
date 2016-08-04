@@ -36,6 +36,7 @@
 		3C2B372E1D3B8E04004903CE /* LX_BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B372D1D3B8E04004903CE /* LX_BaseTableViewController.swift */; };
 		3C3269661D48382700C7EC51 /* LX_TitleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */; };
 		3C3448E31D4834BF00884EB4 /* LX_MessageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3448E21D4834BF00884EB4 /* LX_MessageViewController.storyboard */; };
+		3C5085BC1D52CDC00050177B /* LX_QRCodeCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5085BB1D52CDC00050177B /* LX_QRCodeCreatViewController.swift */; };
 		3C662E8D1D483281001CE5DB /* UIBarButtonItem+Extention .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */; };
 		3C662E8F1D48335C001CE5DB /* LX_DiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		3C2B372D1D3B8E04004903CE /* LX_BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_BaseTableViewController.swift; sourceTree = "<group>"; };
 		3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_TitleBtn.swift; sourceTree = "<group>"; };
 		3C3448E21D4834BF00884EB4 /* LX_MessageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_MessageViewController.storyboard; sourceTree = "<group>"; };
+		3C5085BB1D52CDC00050177B /* LX_QRCodeCreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_QRCodeCreatViewController.swift; sourceTree = "<group>"; };
 		3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention .swift"; sourceTree = "<group>"; };
 		3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_DiscoverViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 			children = (
 				3C036AE31D4A35EE00F50D63 /* LX_QRCodeViewController.swift */,
 				3C036AE51D4A35F900F50D63 /* LX_QRCodeViewController.storyboard */,
+				3C5085BB1D52CDC00050177B /* LX_QRCodeCreatViewController.swift */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				3C2B370F1D3A6C92004903CE /* LX_HomeViewController.swift in Sources */,
 				3C036AC81D49931100F50D63 /* LX_PopoverAnimationManget.swift in Sources */,
 				3C2B372C1D3B89C0004903CE /* LX_VistorView.swift in Sources */,
+				3C5085BC1D52CDC00050177B /* LX_QRCodeCreatViewController.swift in Sources */,
 				3C2B37271D3B80DE004903CE /* UIButton+Extenttion.swift in Sources */,
 				3C036AC31D48F04600F50D63 /* LX_PopoverViewController.swift in Sources */,
 				3C2B371F1D3B6FCE004903CE /* LX_NullViewController.swift in Sources */,

@@ -71,11 +71,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M11-44-tKw">
+                                <rect key="frame" x="157" y="533" width="60" height="30"/>
+                                <state key="normal" title="我的名片"/>
+                                <connections>
+                                    <segue destination="cf3-us-ZVi" kind="show" id="wMl-gP-aZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPb-7V-UK7">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                <state key="normal" title="我的名片"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="M11-44-tKw" firstAttribute="top" secondItem="Vri-Cm-L84" secondAttribute="bottom" constant="10" id="51m-kz-yPT"/>
                             <constraint firstItem="uue-3e-ppK" firstAttribute="centerY" secondItem="7Z7-DV-gK8" secondAttribute="centerY" id="5jx-yz-LuJ"/>
                             <constraint firstItem="Vri-Cm-L84" firstAttribute="top" secondItem="uue-3e-ppK" secondAttribute="bottom" constant="20" id="GT0-I5-Frv"/>
+                            <constraint firstItem="M11-44-tKw" firstAttribute="centerX" secondItem="7Z7-DV-gK8" secondAttribute="centerX" id="Z6F-EZ-nfC"/>
                             <constraint firstItem="Vri-Cm-L84" firstAttribute="centerX" secondItem="7Z7-DV-gK8" secondAttribute="centerX" id="dhO-Ow-Mel"/>
                             <constraint firstItem="uue-3e-ppK" firstAttribute="centerX" secondItem="7Z7-DV-gK8" secondAttribute="centerX" id="kOJ-Ps-WKk"/>
                         </constraints>
@@ -89,6 +102,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="相册" id="RJt-b0-x8O">
                             <color key="tintColor" red="1" green="0.54011265109999995" blue="0.069050785389999994" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="photoBtnClick:" destination="aeD-Oi-PqB" id="TrU-XY-kel"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -105,6 +121,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1e-r6-jJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-758.5" y="120.5"/>
+        </scene>
+        <!--Code Creat View Controller-->
+        <scene sceneID="Sl3-ip-115">
+            <objects>
+                <viewController id="cf3-us-ZVi" customClass="LX_QRCodeCreatViewController" customModule="weibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yuz-8I-4oK"/>
+                        <viewControllerLayoutGuide type="bottom" id="FC6-Jq-90j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Snm-PT-FG0" customClass="LX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xpa-jQ-mA4">
+                                <rect key="frame" x="37" y="184" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1Kw-s2-lEl"/>
+                                    <constraint firstAttribute="height" constant="300" id="asp-rS-qaQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xpa-jQ-mA4" firstAttribute="centerX" secondItem="Snm-PT-FG0" secondAttribute="centerX" id="E7I-qF-VpE"/>
+                            <constraint firstItem="Xpa-jQ-mA4" firstAttribute="centerY" secondItem="Snm-PT-FG0" secondAttribute="centerY" id="Yyc-IS-JGf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="Xpa-jQ-mA4" id="zWL-yG-Z50"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="024-vR-CwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356.5" y="150.5"/>
         </scene>
     </scenes>
     <resources>

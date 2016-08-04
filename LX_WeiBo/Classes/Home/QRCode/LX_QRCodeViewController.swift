@@ -42,6 +42,24 @@ class LX_QRCodeViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    
+
+    //打开相册
+    @IBAction func photoBtnClick(sender: AnyObject) {
+        //0.判断是否可以可以打开相册
+        guard UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) else{
+            return
+        }
+        
+        //1.创建图片选择器
+        let pickerVc = UIImagePickerController()
+        pickerVc.delegate = self
+        //2.弹出图片选择控制器
+        presentViewController(pickerVc, animated: true, completion: nil)
+        
+        
+    }
+    
     // 冲击波动画
     private func startAnimation(){
         //让冲击波初始化到顶部
@@ -134,6 +152,41 @@ class LX_QRCodeViewController: UIViewController {
 }
 
 
+// MARK: - UIImagePickerControllerDelegate
+
+extension LX_QRCodeViewController:UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+    
+    /// 只要选中一张图片,就会调用这个代理方法
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    
+        // 1.取出当前选中的图片
+        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else
+        {
+            LXLog("没有拿到图片")
+            return
+        }
+        // 2.从图片中识别二维码数据
+        // 2.1创建一个CIImage
+        let ciImage = CIImage(image: image)!
+        
+        // 2.2创建一个探测器
+        let dict = [CIDetectorAccuracy : CIDetectorAccuracyHigh]
+        let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: dict)
+        
+        // 2.3利用探测器检测结果
+        let features = detector.featuresInImage(ciImage)
+        
+        for objc in features
+        {
+            resultLable.text = (objc as! CIQRCodeFeature).messageString
+        }
+        
+        // 3.关闭图片选择器
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+}
 // MARK: - AVCaptureMetadataOutputObjectsDelegate
 extension LX_QRCodeViewController:AVCaptureMetadataOutputObjectsDelegate{
   
