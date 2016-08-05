@@ -18,11 +18,22 @@ class LX_UserAccout: NSObject,NSCoding {
      *  access_token的生命周期,单位是 秒
      */
     var expires_in:NSNumber?
+    {
+        didSet{
+            expires_Date = NSDate(timeIntervalSinceNow: expires_in!.doubleValue)
+        }
+    }
+    
+    /// 过期时间
+    var expires_Date: NSDate?
+    
     /**
      *  当前授权用户的ID
      */
     var uid:String?
-    
+    /**
+     *  当前账户
+     */
     static var userAccout: LX_UserAccout?
     
     init(dict: [String: AnyObject]) {
@@ -43,6 +54,7 @@ class LX_UserAccout: NSObject,NSCoding {
     
 //    static let filePath = (NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true).last! as NSString).stringByAppendingPathComponent("userAccout.plist")
     
+    //优化创建路径
     static let filePath = "userAccout.plist".cacheDir()
     /**
      *  MARK - 外部控制方法
@@ -77,6 +89,16 @@ class LX_UserAccout: NSObject,NSCoding {
         
         userAccout = NSKeyedUnarchiver.unarchiveObjectWithFile(LX_UserAccout.filePath) as? LX_UserAccout
         
+        //3.判断是否股过期
+        guard let date = userAccout?.expires_Date where date.compare(NSDate()) == NSComparisonResult.OrderedDescending  else
+        {
+            LXLog("已经过期了")
+            userAccout = nil
+            return userAccout
+        }
+        
+        LXLog("没有过期\(userAccout)")
+        
         return userAccout
     }
     
@@ -93,8 +115,8 @@ class LX_UserAccout: NSObject,NSCoding {
     required init?(coder aDecoder: NSCoder) {
         access_token = aDecoder.decodeObjectForKey("access_token") as? String
         expires_in = aDecoder.decodeObjectForKey("expires_in") as? NSNumber
-
         uid = aDecoder.decodeObjectForKey("uid") as? String
+        expires_Date = aDecoder.decodeObjectForKey("expires_Date") as? NSDate
         
     }
     
@@ -103,12 +125,8 @@ class LX_UserAccout: NSObject,NSCoding {
         aCoder.encodeObject(access_token,forKey: "access_token")
         aCoder.encodeObject(expires_in,forKey: "expires_in")
         aCoder.encodeObject(uid,forKey: "uid")
+        aCoder.encodeObject(expires_Date,forKey: "expires_Date")
     }
-    
-    
-    
-    
-    
-    
+
     
 }
