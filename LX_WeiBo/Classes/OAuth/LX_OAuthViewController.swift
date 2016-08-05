@@ -85,7 +85,6 @@ extension LX_OAuthViewController:UIWebViewDelegate{
             //截取code=后面的字符串
             let codeStr  = temp.substringFromIndex(code.endIndex)
             LXLog("授权成功"+codeStr)
-            
             //利用requestoken换取Accesstoken
             loadAccesstoken(codeStr)
         }
@@ -108,7 +107,13 @@ extension LX_OAuthViewController:UIWebViewDelegate{
              uid = 5907306246;
              })
              */
+            
+            
             LXLog(objc)
+            
+            let userAccout = LX_UserAccout(dict: objc as! [String: AnyObject])
+            userAccout .saveAccout()
+            
             }) { (task, error) in
                 LXLog(error)
         }

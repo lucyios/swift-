@@ -15,12 +15,10 @@ class LX_BaseTableViewController: UITableViewController {
     /**
      记录用户是否登录
      */
-     var login: Bool = false
+     var login: Bool = LX_UserAccout.login()
     
     //访客视图
     var visitorView: LX_VistorView?
-    
-    
     
     override func loadView() {
         super.loadView()
@@ -48,10 +46,10 @@ class LX_BaseTableViewController: UITableViewController {
         super.viewDidLoad()
         //3.添加导航条按钮
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(LX_BaseTableViewController.registerBtnClick));
-//        
+
+        
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登陆", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(LX_BaseTableViewController.loginBtnClick))
-        
-        
+
 
     }
     

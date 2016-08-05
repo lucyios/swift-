@@ -42,6 +42,8 @@
 		3C662E8D1D483281001CE5DB /* UIBarButtonItem+Extention .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */; };
 		3C662E8F1D48335C001CE5DB /* LX_DiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */; };
 		3C79AD511D5418CF00C40932 /* LX_NetWorkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79AD501D5418CF00C40932 /* LX_NetWorkManger.swift */; };
+		3C96AD081D54A9D400DC4804 /* LX_UserAccout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C96AD071D54A9D400DC4804 /* LX_UserAccout.swift */; };
+		3C96AD0A1D54BE3100DC4804 /* String+Extentiton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C96AD091D54BE3100DC4804 /* String+Extentiton.swift */; };
 		77217E691EF59B9906B35DEB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AA68EA20096A06281FD4A1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +108,8 @@
 		3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention .swift"; sourceTree = "<group>"; };
 		3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_DiscoverViewController.storyboard; sourceTree = "<group>"; };
 		3C79AD501D5418CF00C40932 /* LX_NetWorkManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_NetWorkManger.swift; sourceTree = "<group>"; };
+		3C96AD071D54A9D400DC4804 /* LX_UserAccout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_UserAccout.swift; sourceTree = "<group>"; };
+		3C96AD091D54BE3100DC4804 /* String+Extentiton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extentiton.swift"; sourceTree = "<group>"; };
 		E4AA68EA20096A06281FD4A1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +174,7 @@
 			children = (
 				3C06A3ED1D536182003781AA /* LX_OAuthViewController.storyboard */,
 				3C06A3E91D536169003781AA /* LX_OAuthViewController.swift */,
+				3C96AD071D54A9D400DC4804 /* LX_UserAccout.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */,
 				3C036AC91D49964500F50D63 /* LX_Common.swift */,
 				3C79AD501D5418CF00C40932 /* LX_NetWorkManger.swift */,
+				3C96AD091D54BE3100DC4804 /* String+Extentiton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -531,6 +537,8 @@
 				3C06A3EB1D536169003781AA /* LX_OAuthViewController.swift in Sources */,
 				3C79AD511D5418CF00C40932 /* LX_NetWorkManger.swift in Sources */,
 				3C2B37151D3A7391004903CE /* main.swift in Sources */,
+				3C96AD081D54A9D400DC4804 /* LX_UserAccout.swift in Sources */,
+				3C96AD0A1D54BE3100DC4804 /* String+Extentiton.swift in Sources */,
 				3C036AE41D4A35EE00F50D63 /* LX_QRCodeViewController.swift in Sources */,
 				3C2B370D1D3A6C83004903CE /* LX_DiscoverViewController.swift in Sources */,
 				3C2B372E1D3B8E04004903CE /* LX_BaseTableViewController.swift in Sources */,
