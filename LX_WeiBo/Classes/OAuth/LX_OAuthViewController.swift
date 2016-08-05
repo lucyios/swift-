@@ -46,8 +46,50 @@ class LX_OAuthViewController: UIViewController {
         let request = NSURLRequest(URL: url)
         webView.loadRequest(request)
         
-        
     }
  
     
+}
+
+
+extension LX_OAuthViewController:UIWebViewDelegate{
+    /**
+     webview每次请求一个新的地址都会调用该方法,返回true,代表允许访问,否则不允许访问
+     
+     - parameter webView:        webView description
+     - parameter request:        request description
+     - parameter navigationType: navigationType description
+     
+     - returns: return value description
+     */
+    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+       
+        LXLog(request.URL)
+
+        //1.判断是否是授权回调地址,如果不是,就允许继续跳转
+        guard let urlStr = request.URL?.absoluteString where urlStr.hasPrefix(WB_REDIRECT_URI) else{
+            
+            LXLog("api.weibo.com")
+            return true
+        }
+        
+        //2.判断授权是否成功
+        let code = "code="
+        guard urlStr.containsString(code) else{
+            LXLog("error_url")
+            return false
+        }
+        
+        //3.授权成功
+        if let temp = request.URL?.query {
+            //截取code=后面的字符串
+            let codeStr  = temp.substringFromIndex(code.endIndex)
+            LXLog(codeStr)
+            
+        }
+        
+        return false
+
+        
+    }
 }

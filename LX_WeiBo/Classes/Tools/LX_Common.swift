@@ -20,5 +20,6 @@ let WB_APP_KEY = "139563585"
 let WB_APP_SECRET = "1351888000d1944e8353f9a351591f61"
 let WB_REDIRECT_URI = "http://sns.whalecloud.com/sina2/callback"
 
+// let WB_REDIRECT_URI = "http://mutualtalk.com"
 
         
