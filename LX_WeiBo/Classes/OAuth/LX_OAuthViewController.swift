@@ -79,17 +79,38 @@ extension LX_OAuthViewController:UIWebViewDelegate{
             LXLog("error_url")
             return false
         }
-        
+ 
         //3.授权成功
         if let temp = request.URL?.query {
             //截取code=后面的字符串
             let codeStr  = temp.substringFromIndex(code.endIndex)
-            LXLog(codeStr)
+            LXLog("授权成功"+codeStr)
             
+            //利用requestoken换取Accesstoken
+            loadAccesstoken(codeStr)
         }
         
         return false
 
-        
+    }
+    
+    private func loadAccesstoken(codeStr: String){
+        let path = "oauth2/access_token"
+        let parameters = ["client_id": WB_APP_KEY, "client_secret": WB_APP_SECRET, "grant_type": "authorization_code", "code": codeStr, "redirect_uri": WB_REDIRECT_URI]
+       
+        LX_NetWorkManger.shareInstance.POST(path, parameters: parameters, success: { (task, objc) in
+            
+            /**
+             *  LX_OAuthViewController.loadAccesstoken[102]:Optional({
+             "access_token" = "2.00AN9m8G0Zra8Jf93d6d77e48u_OZB";
+             "expires_in" = 150493;
+             "remind_in" = 150493;
+             uid = 5907306246;
+             })
+             */
+            LXLog(objc)
+            }) { (task, error) in
+                LXLog(error)
+        }
     }
 }
