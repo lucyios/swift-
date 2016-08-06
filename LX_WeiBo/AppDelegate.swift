@@ -23,18 +23,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
      
-//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//        window?.backgroundColor = UIColor.whiteColor()
-//        window?.rootViewController = LX_MainViewController()
-//        window?.makeKeyAndVisible()
-        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.whiteColor()
-        let sb = UIStoryboard(name: "LX_NewFeatureViewController", bundle: nil)
-        let newFeatureVC = sb.instantiateInitialViewController()!
-        
-        window?.rootViewController = newFeatureVC
+        window?.rootViewController = LX_MainViewController()
         window?.makeKeyAndVisible()
+        
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        window?.backgroundColor = UIColor.whiteColor()
+//        let sb = UIStoryboard(name: "LX_WelcomeViewController", bundle: nil)
+//        let newFeatureVC = sb.instantiateInitialViewController()!
+//        
+//        window?.rootViewController = newFeatureVC
+//        window?.makeKeyAndVisible()
         
         return true
     }
