@@ -38,7 +38,9 @@
 		3C2B372E1D3B8E04004903CE /* LX_BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B372D1D3B8E04004903CE /* LX_BaseTableViewController.swift */; };
 		3C3269661D48382700C7EC51 /* LX_TitleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */; };
 		3C3448E31D4834BF00884EB4 /* LX_MessageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3448E21D4834BF00884EB4 /* LX_MessageViewController.storyboard */; };
+		3C34C2251D55BE15002432ED /* LX_NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34C2241D55BE15002432ED /* LX_NewFeatureViewController.swift */; };
 		3C5085BC1D52CDC00050177B /* LX_QRCodeCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5085BB1D52CDC00050177B /* LX_QRCodeCreatViewController.swift */; };
+		3C54E03A1D55BA0900F57C35 /* LX_NewFeatureViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C54E0391D55BA0900F57C35 /* LX_NewFeatureViewController.storyboard */; };
 		3C662E8D1D483281001CE5DB /* UIBarButtonItem+Extention .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */; };
 		3C662E8F1D48335C001CE5DB /* LX_DiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */; };
 		3C79AD511D5418CF00C40932 /* LX_NetWorkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79AD501D5418CF00C40932 /* LX_NetWorkManger.swift */; };
@@ -104,7 +106,9 @@
 		3C2B372D1D3B8E04004903CE /* LX_BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_BaseTableViewController.swift; sourceTree = "<group>"; };
 		3C3269651D48382700C7EC51 /* LX_TitleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_TitleBtn.swift; sourceTree = "<group>"; };
 		3C3448E21D4834BF00884EB4 /* LX_MessageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_MessageViewController.storyboard; sourceTree = "<group>"; };
+		3C34C2241D55BE15002432ED /* LX_NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_NewFeatureViewController.swift; sourceTree = "<group>"; };
 		3C5085BB1D52CDC00050177B /* LX_QRCodeCreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_QRCodeCreatViewController.swift; sourceTree = "<group>"; };
+		3C54E0391D55BA0900F57C35 /* LX_NewFeatureViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_NewFeatureViewController.storyboard; sourceTree = "<group>"; };
 		3C662E8C1D483281001CE5DB /* UIBarButtonItem+Extention .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention .swift"; sourceTree = "<group>"; };
 		3C662E8E1D48335C001CE5DB /* LX_DiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LX_DiscoverViewController.storyboard; sourceTree = "<group>"; };
 		3C79AD501D5418CF00C40932 /* LX_NetWorkManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LX_NetWorkManger.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 		3C2B37031D3A69B6004903CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3C54E0361D55B9CC00F57C35 /* NewFeature */,
 				3C06A3E81D53614F003781AA /* OAuth */,
 				3C2B37061D3A69B6004903CE /* Main */,
 				3C2B37051D3A69B6004903CE /* Home */,
@@ -317,6 +322,15 @@
 				3C2B37201D3B7054004903CE /* Null.storyboard */,
 			);
 			name = Resourse;
+			sourceTree = "<group>";
+		};
+		3C54E0361D55B9CC00F57C35 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				3C54E0391D55BA0900F57C35 /* LX_NewFeatureViewController.storyboard */,
+				3C34C2241D55BE15002432ED /* LX_NewFeatureViewController.swift */,
+			);
+			path = NewFeature;
 			sourceTree = "<group>";
 		};
 		A8B140262CD85261B9C7B179 /* Frameworks */ = {
@@ -446,6 +460,7 @@
 				3C3448E31D4834BF00884EB4 /* LX_MessageViewController.storyboard in Resources */,
 				3C2B36DD1D3A6945004903CE /* Assets.xcassets in Resources */,
 				3C036AE61D4A35F900F50D63 /* LX_QRCodeViewController.storyboard in Resources */,
+				3C54E03A1D55BA0900F57C35 /* LX_NewFeatureViewController.storyboard in Resources */,
 				3C2B371B1D3B693B004903CE /* Home.storyboard in Resources */,
 				3C2B37211D3B7054004903CE /* Null.storyboard in Resources */,
 			);
@@ -540,6 +555,7 @@
 				3C96AD081D54A9D400DC4804 /* LX_UserAccout.swift in Sources */,
 				3C96AD0A1D54BE3100DC4804 /* String+Extentiton.swift in Sources */,
 				3C036AE41D4A35EE00F50D63 /* LX_QRCodeViewController.swift in Sources */,
+				3C34C2251D55BE15002432ED /* LX_NewFeatureViewController.swift in Sources */,
 				3C2B370D1D3A6C83004903CE /* LX_DiscoverViewController.swift in Sources */,
 				3C2B372E1D3B8E04004903CE /* LX_BaseTableViewController.swift in Sources */,
 				3C036ACA1D49964500F50D63 /* LX_Common.swift in Sources */,

@@ -107,7 +107,6 @@ class LX_UserAccout: NSObject,NSCoding {
         return LX_UserAccout.loadUserAccount() != nil
     }
     
-    
     /**
      *  MARK - NSCoding
      */
